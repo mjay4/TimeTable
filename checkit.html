@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+<script>
+function myFunction2() {
+  var x = document.getElementById("tech");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    
+  margin: 0;
+}
+
+a {display: block;}
+
+.navbar {
+  overflow: hidden;
+  background-color:   #8B008B;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul.a{
+   background: #330066;
+  padding: 20px;
+}
+
+ul.a li{
+   background: #99FFFF;
+  margin: 5px;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #D3D3D3;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 50%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: red;
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #ccc;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+.days {
+  width: 25%;
+   background-color: #ddd; 
+  font-weight: bold;
+}
+
+.a{
+  background-color: #ddd; 
+}
+
+.bu{
+  font-weight: bold;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+td:hover {background-color:#15f5ff;}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  text-align: left;
+}
+</style>
+</head>
+<body bgcolor="#ffffff">
+ <h1 style="color:Blue;"  align="center">School Of Computing Timetable</h1>
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Year 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <a href="#">1 st year</a>
+          <a href="#">2 nd year</a>
+          <a href="#">3 rd year</a>
+          <a href="#">4 th year</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Course and DepartMent:  
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <h3>B. Tech</h3>
+          <a href="#">CSE</a>
+          <a href="#">IT</a>
+          <a href="#">ICT</a>
+          <a href="#">....</a>
+        </div>
+        <div class="column">
+          <h3>M. Tech</h3>
+          <a href="#">CSE</a>
+          <a href="#">VLSI</a>
+          <a href="#">Embbeded systems</a>
+          <a href="#">....</a>
+        </div>
+        
+      </div>
+    </div>
+  </div> 
+
+  <div class="dropdown">
+    <button class="dropbtn">Section
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="row">
+        <div class="column">
+          <a href="#">A</a>
+          <a href="#">B</a>
+          <a href="#">C</a>
+          <a href="#">....</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div style="padding:16px;  width: 100% ; float: left">
+  <table style = "width:100%">
+  <caption>Class Timestable</caption>
+  <tr>
+    <th class="days">Day/Hour</th>
+    <th>1(8:45-9:45)</th> 
+    <th>2(9:45-10:45)</th>
+    <th>3(11:00-12:00)</th>
+    <th>4(12:00-1:00)</th>
+    <th>5(1:00-2:00)</th>
+    <th>6(2:00-3:00)</th>
+    <th>7(3:15-4:15)</th>
+    <th>8(4:15-5:15)</th>
+  </tr>
+  <tr>
+    <th class="days">MON</td>
+    <td><button onclick="myFunction()">Java</button> </td>
+    <td><button onclick="myFunction()">HCI</button></td>
+    <td> <button onclick="myFunction()">COCA</button></td>
+    <td> <button onclick="myFunction()">MATHS</button></td>
+    <td> <button onclick="myFunction()">LUNCH</button></td>
+    <td> <button onclick="myFunction()">MPMC</button></td>
+    <td> <button onclick="myFunction()">OOAD</button> </td>
+    <td> <button onclick="myFunction()">FREE</button> </td>
+  </tr>
+  <tr>
+  <th class="days">Tuesday</td>
+  <td><button onclick="myFunction()">COCA</button> </td>
+    <td><button onclick="myFunction()">HCI</button></td>
+    <td> <button onclick="myFunction()">JAVA</button></td>
+    <td> <button onclick="myFunction()">MATHS</button></td>
+    <td> <button onclick="myFunction()">LUNCH</button></td>
+    <td> <button onclick="myFunction()">OOAD</button></td>
+    <td> <button onclick="myFunction()">MPMC</button> </td>
+    <td> <button onclick="myFunction()">FREE</button> </td>
+  
+
+  </tr>
+  <tr>
+    <th class="days">Wednesday</td>
+   <td><button onclick="myFunction()">HCI</button> </td>
+    <td><button onclick="myFunction()">JAVA</button></td>
+    <td> <button onclick="myFunction()">FREE</button></td>
+    <td> <button onclick="myFunction()">OOAD</button></td>
+    <td> <button onclick="myFunction()">LUNCH</button></td>
+    <td> <button onclick="myFunction()">MPMC</button></td>
+    <td> <button onclick="myFunction()">COCA</button> </td>
+    <td> <button onclick="myFunction()">FREE</button> </td>
+  </tr>
+   <tr>
+    <th class="days">Thursday</td>
+    <td><button onclick="myFunction()">Java</button> </td>
+    <td><button onclick="myFunction()">HCI</button></td>
+    <td> <button onclick="myFunction()">MPMC</button></td>
+    <td> <button onclick="myFunction()">MATHS</button></td>
+    <td> <button onclick="myFunction()">LUNCH</button></td>
+    <td> <button onclick="myFunction()">FREE</button></td>
+    <td> <button onclick="myFunction()">OOAD</button> </td>
+    <td> <button onclick="myFunction()">COCA</button> </td>
+  </tr>
+   <tr>
+    <th class="days">Friday</td>
+    <td><button onclick="myFunction()">Java</button> </td>
+    <td><button onclick="myFunction()">HCI</button></td>
+    <td> <button onclick="myFunction()">COCA</button></td>
+    <td> <button onclick="myFunction()">MATHS</button></td>
+    <td> <button onclick="myFunction()">LUNCH</button></td>
+    <td> <button onclick="myFunction()">MPMC</button></td>
+    <td> <button onclick="myFunction()">OOAD</button> </td>
+    <td> <button onclick="myFunction()">FREE</button> </td>
+  </tr>
+
+</table>
+</div>
+
+ 
+<div id="myDIV";  style="padding:16px; overflow: auto; height: 300px; width : 35%; float : left">
+
+<caption><b>Teacher's List</b></caption>
+<ul class="a">
+
+  <li> <input type="button" class="bu" onclick="myFunction2()" value="Mr. M.P Kartik"/> Designation : AP 1 </li>
+  <li> <input type="button" class="bu" onclick="myFunction2()" value="Mr. JAY "/> Designation : AP 2 </li>
+  <li> <input type="button" class="bu" onclick="myFunction2()" value="MS. SASHI "/> Designation : AP 1 </li>
+  <li> <input type="button" class="bu" onclick="myFunction2()" value="Mr. RAM "/> Designation : AP 1 </li>
+  <li> <input type="button" class="bu" onclick="myFunction2()" value="Mr. MOHAN "/> Designation : AP 2 </li>
+  <li> <input type="button" class="bu" onclick="myFunction2()" value="Mr. ROY "/> Designation : AP 2 </li>
+  <li> <input type="button" class="bu" onclick="myFunction2()" value="Mr. SURYA "/> Designation : AP 1 </li>
+  <li> <input type="button" class="bu" onclick="myFunction2()" value="Mr. SAM "/> Designation : AP 2 </li>
+  <li> <input type="button" class="bu" onclick="myFunction2()" value="Mr. SUHAS "/> Designation : AP 2 </li>
+  <li> <input type="button" class="bu" onclick="myFunction2()" value="Mr. VINAY "/> Designation : AP 2 </li>
+  <li> <input type="button" class="bu" onclick="myFunction2()" value="Mr. KRISHAN "/> Designation : AP 2 </li>
+  <li> <input type="button" class="bu" onclick="myFunction2()" value="Mr. MEENA "/> Designation : AP 2 </li>
+  <li> <input type="button" class="bu" onclick="myFunction2()" value="Mr. ADITY "/> Designation : AP 2 </li>
+  <li> <input type="button" class="bu" onclick="myFunction2()" value="Mr. PRAVENNA "/> Designation : AP 2 </li>
+  <li> <input type="button" class="bu" onclick="myFunction2()" value="Mr. BHUVI "/> Designation : AP 2 </li>
+  <li> <input type="button" class="bu" onclick="myFunction2()" value="Mr. LALITA "/> Designation : AP 2 </li>
+  <li> <input type="button" class="bu" onclick="myFunction2()" value="Mr. NIKILA "/> Designation : AP 2 </li>
+
+</div>
+
+<div id="tech"; style="padding:16px; width : 60%; height: 300px; float:right">
+<table style="width : 100%">
+  <caption>Teacher Timetable</caption>
+  <tr>
+    <th class="days">Day/Hour</th>
+    <th>1(8:45-9:45)</th> 
+    <th>2(9:45-10:45)</th>
+    <th>3(11:00-12:00)</th>
+    <th>4(12:00-1:00)</th>
+    <th>5(1:00-2:00)</th>
+    <th>6(2:00-3:00)</th>
+    <th>7(3:15-4:15)</th>
+    <th>8(4:15-5:15)</th>
+  </tr>
+  <tr>
+    <th class="days">MON</td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+  <th class="days">Tuesday</td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+
+  </tr>
+  <tr>
+    <th class="days">Wednesday</td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <th class="days">Thursday</td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+   <tr>
+    <th class="days">Friday</td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+
+</div>
+
+</body>
+
+</html>
