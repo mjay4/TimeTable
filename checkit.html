@@ -40,12 +40,6 @@ body {
 
 a {display: block;}
 
-.navbar {
-  overflow: hidden;
-  background-color:   #8B008B;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 ul.a{
    background: #330066;
   padding: 20px;
@@ -54,55 +48,6 @@ ul.a{
 ul.a li{
    background: #99FFFF;
   margin: 5px;
-}
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font: inherit;
-  margin: 0;
-}
-
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #D3D3D3;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  width: 50%;
-  left: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content .header {
-  background: red;
-  padding: 16px;
-  color: white;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 /* Create three equal columns that floats next to each other */
@@ -167,64 +112,6 @@ th {
 </head>
 <body bgcolor="#ffffff">
  <h1 style="color:Blue;"  align="center">School Of Computing Timetable</h1>
-<div class="navbar">
-  <div class="dropdown">
-    <button class="dropbtn">Year 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <div class="row">
-        <div class="column">
-          <a href="#">1 st year</a>
-          <a href="#">2 nd year</a>
-          <a href="#">3 rd year</a>
-          <a href="#">4 th year</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="dropdown">
-    <button class="dropbtn">Course and DepartMent:  
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <div class="row">
-        <div class="column">
-          <h3>B. Tech</h3>
-          <a href="#">CSE</a>
-          <a href="#">IT</a>
-          <a href="#">ICT</a>
-          <a href="#">....</a>
-        </div>
-        <div class="column">
-          <h3>M. Tech</h3>
-          <a href="#">CSE</a>
-          <a href="#">VLSI</a>
-          <a href="#">Embbeded systems</a>
-          <a href="#">....</a>
-        </div>
-        
-      </div>
-    </div>
-  </div> 
-
-  <div class="dropdown">
-    <button class="dropbtn">Section
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <div class="row">
-        <div class="column">
-          <a href="#">A</a>
-          <a href="#">B</a>
-          <a href="#">C</a>
-          <a href="#">....</a>
-        </div>
-      </div>
-    </div>
-  </div> 
-</div>
 
 <div style="padding:16px;  width: 100% ; float: left">
   <table style = "width:100%">
